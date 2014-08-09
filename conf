@@ -1,0 +1,26 @@
+FileSystem = Distributed
+DFSHost = 128.237.178.32
+DFSPort = 2014
+JobTrackerHost = 128.237.178.32
+JobTrackerPort = 1990
+SplitSize = 1
+EncodeSet = US-ASCII
+EOFSize = 1
+SplitMinSize = 1
+SplitMaxSize = 1
+ConfigurationRoot = Configuration
+
+TaskTrackerRoot = TaskTracker/
+MapTaskSlotNum = 2
+ReduceTaskSlotNum = 2
+TaskTrackerHeartbeatInterval = 10
+MaxTaskTrackerReconnectNum = 3;
+
+TaskTrackerExpireInterval = 20
+JobTrackerRoot = JobTracker/
+JobTrackerHistoryDir = /History
+MaxJobRunningTime = 600
+MaxMapTaskNumPerJob = 5
+MaxReduceTaskNumPerJob = 5
+MaxJobInitThreadNum = 5
+MaxTaskRetryNum = 3
